@@ -1,0 +1,214 @@
+.card-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  padding: 24px;
+  margin-top: 16px;
+}
+.card-first-container,
+.card-third-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.first-left {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+}
+.priority-color {
+  width: 9px;
+  height: 9px;
+  /* background-color: red; */
+  border-radius: 50%;
+}
+.title {
+  font-family: "Poppins";
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 12px;
+  text-align: left;
+}
+.person {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15px;
+  width: 15px;
+  font-family: "DM Sans";
+  font-size: 7px;
+  font-weight: 400;
+  line-height: 9.11px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  background-color: #ffebeb;
+  border-radius: 50%;
+}
+.first-right {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.card-second-container {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.card-third-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+}
+.card-third-container p {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.94px;
+  text-align: left;
+}
+.card-third-container img {
+  cursor: pointer;
+}
+
+.rotate {
+  rotate: 180deg;
+}
+
+.checklist-item {
+  width: 264px;
+  height: 42px;
+  gap: 10px;
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.checklist-item p {
+  margin-top: 1px;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.94px;
+  text-align: left;
+}
+
+/* Remove the default appearance */
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 6.5px;
+  border-radius: 6px;
+  border: 2px solid #e2e2e2;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #4da6a7;
+  border-color: #4da6a7;
+  position: relative;
+}
+
+input[type="checkbox"]:checked::before {
+  content: "✓";
+  color: white;
+  position: absolute;
+  left: 1px;
+  top: -3px;
+}
+
+.date,
+.progress-btn {
+  font-family: "Poppins";
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 12px;
+  /* text-align: left; */
+  background-color: #5a5a5a;
+  color: #5a5a5a;
+}
+
+.progress-btn,
+.date {
+  background-color: #eeecec;
+  height: 22px;
+  /* width: 58px; */
+  border-radius: 8px;
+  text-align: center;
+  padding: 5px 10px;
+  border: none;
+}
+
+.card-fouth-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 18px;
+}
+.card-fouth-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.progress-btn-container button {
+  cursor: pointer;
+}
+
+.card-options-model {
+  position: absolute;
+  top: 10px;
+  right: 0;
+
+  height: 120px;
+  width: 151px;
+
+  box-shadow: 0px 2px 22px 0px #7e7a7a40;
+  border-radius: 12px;
+
+  background-color: #ffff;
+
+  z-index: 12;
+
+  display: flex;
+  flex-direction: column;
+
+  font-family: "Poppins";
+  font-size: 14px !important;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: left;
+}
+
+.card-options-model div {
+  display: flex;
+  flex-direction: column;
+  padding-top: 23px;
+  padding-left: 19px;
+  gap: 10px;
+}
+
+.card-options-model div span {
+  cursor: pointer;
+}

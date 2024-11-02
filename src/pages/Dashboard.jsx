@@ -2,14 +2,12 @@ import React from "react";
 import "./Dashboard.css";
 import Navbar from "../components/Navbar";
 import MainContent from "../components/MainContent";
+import { Outlet } from "react-router-dom";
 function Dashboard() {
   return (
     <div className="main-container">
-     <Navbar></Navbar>
-
-      <div className="main-content-container">
-        <MainContent></MainContent>
-      </div>
+      <Navbar></Navbar>
+      <Outlet></Outlet>
     </div>
   );
 }

@@ -155,7 +155,7 @@ function Register() {
 
       <div className="login-section">
         <div className="header">
-          <h2>Register</h2>
+          <p>Register</p>
         </div>
 
         <div className="form">

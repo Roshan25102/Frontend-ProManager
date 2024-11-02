@@ -1,0 +1,213 @@
+.task-page-main-container {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+
+  /* background-color: aqua; */
+  /* position: relative; */
+  box-sizing: border-box;
+}
+
+.task-page-logo-container {
+  display: flex;
+  align-items: center;
+
+  padding-top: 32px;
+  padding-left: 83px;
+
+  gap: 16px;
+
+  margin-bottom: 0;
+}
+
+.task-page-logo-container h1 {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+}
+
+.task-page-logo-container img {
+  height: 24px;
+  width: 24px;
+}
+
+.task-page-task-details-container {
+  /* background-color: bisque; */
+  margin-top: 5%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task-page-task-main-container {
+  background-color: white;
+  width: 654px;
+  /* height: 546px; */
+  max-height: 782px;
+
+  gap: 0px;
+  border-radius: 12px;
+  border: 2px solid #edf5fe;
+  opacity: 0px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 62px;
+  padding-left: 33px;
+}
+
+.task-page-task-priority {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: "Poppins";
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 12px;
+  text-align: left;
+}
+
+.priority-dot-container {
+  height: 9px;
+  width: 9px;
+
+  border-radius: 50%;
+}
+
+.task-page-task-main-container h1 {
+  margin-top: 22px;
+
+  font-family: "Poppins";
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 33px;
+  text-align: left;
+}
+
+.task-page-task-main-container h3 {
+  margin-top: 50px;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.94px;
+  text-align: left;
+}
+
+.task-page-checklist-item {
+  width: 588px;
+}
+
+.task-page-due-date-contianer {
+  margin-top: 18px;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  margin-bottom: 62px;
+}
+
+.task-page-due-date-contianer p,
+button {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  /* text-align: left; */
+
+  /* text-align: left; */
+}
+
+.task-page-due-date-contianer button {
+  border: none;
+
+  background-color: #cf3636;
+  color: #ffff;
+
+  height: 32px;
+  width: 78px;
+
+  border-radius: 8px;
+}
+
+.task-page-checklist-main-container {
+  margin-top: 18px;
+  height: 420px auto;
+  max-height: 420px;
+
+  /* background-color: #cf3636; */
+
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* media queries */
+@media (max-width: 768px) {
+  .task-page-logo-container {
+    padding-top: 32px;
+    padding-left: 32px;
+  }
+
+  .task-page-task-details-container {
+    /* background-color: bisque; */
+    margin-top: 5%;
+    margin-left: 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .task-page-task-main-container {
+    background-color: white;
+    width: 316px;
+    height: auto;
+    max-height: 658px;
+
+    padding: 24px;
+  }
+
+  .task-page-task-main-container h1 {
+    margin-top: 8px;
+
+    font-family: "Poppins";
+    font-size: 18px;
+  }
+
+  .task-page-task-main-container h3 {
+    margin-top: 24px;
+  }
+
+  .task-page-checklist-item {
+    width: 264px;
+  }
+
+  .task-page-due-date-contianer button {
+    height: 28px;
+    width: 69px;
+  }
+  .task-page-due-date-contianer p,
+  button {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+
+  .task-page-checklist-main-container {
+    margin-top: 16px;
+    height: 410px auto;
+
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 480px) {
+}

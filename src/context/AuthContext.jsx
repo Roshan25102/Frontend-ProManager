@@ -8,6 +8,7 @@ export const AuthProvider = ({ children }) => {
 
   useEffect(() => {
     const token = localStorage.getItem("token");
+    const name = localStorage.getItem("name");
     // console.log("Retrieved token from localStorage:", token);
     if (token) {
       setIsAuthenticated(true);
@@ -15,14 +16,16 @@ export const AuthProvider = ({ children }) => {
     setLoading(false); // Authentication check is done
   }, []);
 
-  const login = (token) => {
+  const login = (token, name) => {
     localStorage.setItem("token", token);
+    localStorage.setItem("name", name);
     // console.log("Token saved to localStorage:", token);
     setIsAuthenticated(true);
   };
 
   const logout = () => {
     localStorage.removeItem("token");
+    localStorage.removeItem("name");
     // console.log("Token removed from localStorage");
     setIsAuthenticated(false);
   };

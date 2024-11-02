@@ -1,0 +1,43 @@
+.task-container {
+  min-width: 360px;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #eef2f5;
+  padding: 24px 24px 0 24px;
+  overflow-y: scroll;
+  /* margin-bottom: 44px; */
+}
+
+.task-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.task-top p {
+  /* width: 45px; */
+  height: 24px;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #000000;
+}
+.task-top-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+}
+
+#plus {
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+#collabs {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}

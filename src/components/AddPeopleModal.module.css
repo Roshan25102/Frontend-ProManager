@@ -1,0 +1,65 @@
+.peopleMainContainer {
+  display: flex;
+  flex-direction: column;
+}
+.peopleMainContainer p {
+  font-family: "Noto Sans";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27.24px;
+  text-align: left;
+  margin-left: 10px;
+}
+.peopleMainContainer input {
+  width: 594px;
+  height: 56px;
+  margin-top: 27px;
+  border-radius: 10px;
+  border: 1px solid #767575;
+  padding-left: 10px;
+}
+.peopleMainContainer input::placeholder {
+  font-family: "Noto Sans";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27.24px;
+  text-align: left;
+  color: #00000080;
+}
+
+.peopleButtons {
+  margin-top: 43px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.peopleButtons button {
+  width: 300px;
+  height: 45px;
+  border-radius: 12px;
+  border: 1px;
+  box-shadow: 0px 2px 12px 0px #82698c33;
+  cursor: pointer;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  text-align: center;
+}
+.peopleButtons :first-child {
+  border: 1px solid #cf3636;
+  color: #cf3636;
+  background-color: white;
+}
+.peopleButtons :last-child {
+  color: white;
+  background-color: #17a2b8;
+}
+
+.add_people_modal_assignee {
+  position: absolute;
+  box-sizing: border-box;
+  margin-top: 110px;
+  margin-left: -80px;
+  width: 594px;
+}

@@ -1,0 +1,30 @@
+.logout-content-container{
+  display: flex;
+  flex-direction: column;
+}
+.logout-content-container p{
+  font-family: 'Noto Sans';
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.07px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.logout-content-container button{
+  border: none;
+  width: 300px;
+  height: 45px;
+  border-radius: 12px;
+}
+#yes{
+  background-color:#17A2B8;
+  color: white;
+  cursor: pointer;
+}
+#no{
+  color:#CF3636;
+  background-color: white;
+  border: 1px solid #CF3636;
+  margin-top: 10px;
+  cursor: pointer;
+}

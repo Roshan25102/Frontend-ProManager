@@ -55,7 +55,8 @@ function Login() {
       if (response.ok) {
         toast.success("Logged in successfully!");
         console.log("Token received:", data.token);
-        login(data.token);
+
+        login(data.token, data.name);
         navigate("/dashboard");
       } else {
         toast.error("Login failed. Please try again.");
@@ -72,14 +73,14 @@ function Login() {
   const handleRedirect = () => {
     navigate("/register");
   };
-  
+
   return (
     <div className="container">
       <HomePageBanner />
 
       <div className="login-section">
         <div className="header">
-          <h2>Login</h2>
+          <p>Login</p>
         </div>
 
         <div className="form">
