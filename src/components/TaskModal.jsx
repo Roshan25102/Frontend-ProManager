@@ -100,10 +100,12 @@ function TaskModal({ isOpen, onClose, showToast, onProgressUpdate }) {
   //   console.log(assignedTo);
   // }, [assignedTo]);
 
-  const handleAssign = (assigneeValue) => {
+  const handleAssign = (assigneeValue, assigneeEmail) => {
     if (!assignedTo.includes(assigneeValue)) {
       setAssignedTo([...assignedTo, assigneeValue]);
     }
+    setSearchText(assigneeEmail); // Set the input field to the assignee's email
+    hideDropdown(); // Close the dropdown
   };
 
   const filteredAssignees = assignees.filter((assignee) =>
@@ -265,7 +267,7 @@ function TaskModal({ isOpen, onClose, showToast, onProgressUpdate }) {
           <div>
             <input
               className="assignee-input-container"
-              placeholder="Add a assignee"
+              placeholder={searchText || "Add an assignee"}
               ref={assigneeSelect}
               value={searchText}
               onChange={(e) => setSearchText(e.target.value)}
@@ -286,7 +288,7 @@ function TaskModal({ isOpen, onClose, showToast, onProgressUpdate }) {
                   href="/"
                   onClick={(e) => {
                     e.preventDefault();
-                    handleAssign(assignee.userId);
+                    handleAssign(assignee.userId, assignee.email);
                   }}
                 >
                   Assign
