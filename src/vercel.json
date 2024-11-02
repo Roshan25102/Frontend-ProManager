@@ -1,6 +1,6 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-    { "source": "/task", "destination": "/src/components/TaskPage.jsx" }
+    { "source": "/(.*)", "destination": "/index.html" },
+    { "source": "/task", "destination": "/index.html" }
   ]
 }
