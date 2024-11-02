@@ -19,7 +19,7 @@ function MainContent() {
 
   const [tasks, setTasks] = useState([]);
   const [updateTrigger, setUpdateTrigger] = useState(false);
-  const [taskFilter, setTaskFilter] = useState("This week");
+  const [taskFilter, setTaskFilter] = useState("All");
   const [taskFilterVisible, setTaskFilterVisible] = useState(false);
   // Fetch tasks data from the API on component mount
   const fetchTasks = useCallback(async () => {
