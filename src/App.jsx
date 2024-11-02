@@ -9,7 +9,7 @@ import { AuthProvider } from "./context/AuthContext";
 import Dashboard from "./pages/Dashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Login from "./pages/Login";
-import Register from "./pages/register";
+import Register from "./pages/Register";
 import TaskPage from "./pages/TaskPage";
 import MainContent from "./components/MainContent";
 import Analytics from "./components/Analytics";
