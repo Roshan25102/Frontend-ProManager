@@ -51,6 +51,7 @@ function AddPeopleModal({ isOpen, onClose }) {
         { userId: assignee.userId, email: assignee.email },
       ]);
       setLastAssignedEmail(assignee.email); // Store the last assigned email
+      setSearchText(assignee.email); // Update input with the assigned email
     }
     hideDropdown(); // Hide the dropdown after assigning
   };
@@ -110,6 +111,7 @@ function AddPeopleModal({ isOpen, onClose }) {
       setIsSuccess(true); // Set success state to true
       setAssignedTo([]); // Reset assignedTo state after adding
       setSearchText(""); // Clear the search text
+      hideDropdown(); // Hide the dropdown on success
     } catch (error) {
       console.error("Error adding people:", error);
     }
